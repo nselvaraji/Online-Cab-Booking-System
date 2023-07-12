@@ -1,0 +1,89 @@
+
+<style>
+.loginDetails{
+  margin-left:40%;
+  
+}
+</style>
+<body class="body">
+<nav class="navbar"  >
+  <div class="container-fluid">
+    <div class="navbar-header">
+    
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+      <a href="#"><img src="assets/img/logo.png" alt="logo" style="width: 150px; height: 150px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  
+    
+  </div>
+</nav>
+
+
+
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <!-- <img src=""
+           alt="Sample image"> -->
+         
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form [formGroup]="loginForm" (ngSubmit)="Logincall() " class="form-login" >
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            
+            <p class="lead fw-normal mb-0 me-3"><b> </b></p><br>
+            <br>
+            <br>
+            </div>
+         <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example3">Email Address</label>
+            <input type="email" formControlName="emailAddress"  class="form-control form-control-lg" style="margin-right: 20%;"
+              placeholder="email address" />
+            
+       
+          <span style="color:red;" *ngIf="loginForm.controls['emailAddress'].invalid && loginForm.controls['emailAddress'].touched">Email Address is required.</span>
+        </div>
+          <br>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input type="password"  formControlName="password"  class="form-control form-control-lg"
+              placeholder="Enter password" />
+
+              <span style="color:red;" *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">Password is required.</span>
+          </div>
+
+          <br>
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label class="form-check-label" for="form2Example3">
+                Remember me
+              </label>
+            </div>
+          <!--  <a href="#!" class="text-body">Forgot password?</a>-->
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="submit" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+           
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>

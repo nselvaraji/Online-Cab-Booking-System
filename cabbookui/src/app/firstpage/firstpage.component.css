@@ -1,0 +1,11 @@
+.col{
+    background-image: black;
+}
+.container-fluid{
+margin: 0px;
+padding: 0px;
+background-color: linen;
+
+background-size: cover;
+background-repeat: no-repeat;
+}

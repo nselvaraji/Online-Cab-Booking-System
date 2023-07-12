@@ -1,0 +1,213 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .60em;
+  padding-right: .75em;
+  
+  }
+  .card-registration .select-arrow {
+  top: 13px;
+  }
+  h2{
+      color: brown;
+      font-weight: bold;
+      text-align: center;
+  }
+  input.number-to-text::-webkit-outer-spin-button,
+  input.number-to-text::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  .jumbotron {
+      background-color: transparent;
+      margin: 0;
+      padding: 10px;
+    }
+    
+    .jumbotron h1 {
+      letter-spacing: 2.5px;
+      font-size: 3.5em;
+    }
+    
+    .jumbotron h1,
+    .jumbotron p {
+      text-align: center;
+    }
+    
+    /*map*/
+    #map {
+      height: 100%;
+      position: absolute; 
+      top: 0; 
+      bottom: -200px; 
+      left: 0; 
+      right: 0; 
+      z-index: 0;
+    }
+    
+    
+    /*output box*/
+    #output {
+      text-align: center;
+      font-size: 2em;
+      margin: 20px auto;
+    }
+    
+    #mode {
+      color: black;
+    }
+    .text-left {
+      text-align: left;
+  }
+  .bg-white {
+    background-color: #fff;
+}
+
+
+.lg\:w-1\/4 {
+  width: 25%;
+}
+
+.md\:w-2\/5 {
+  width: 40%;
+}
+
+.md\:p-0 {
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 20px;
+padding-left: 0px;
+}
+
+.md\:bg-white {
+  background-color: #fff;
+}
+.overflow-scrolling-touch {
+  -webkit-overflow-scrolling: touch;
+}
+.w-full {
+  width: 100%;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.fixed {
+  position: fixed;
+}
+.p-10 {
+  padding: 0px;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+*, :after, :before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*, :after, :before {
+  box-sizing: border-box;
+  border: 0 solid #e9ebee;
+}
+.text-area{
+
+  width: 100%;
+  height: 40px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  
+  resize: none;
+}
+.btn-group .button {
+  background-color: #3d81f0; /* Green */
+  border: none;
+  color: white;
+  padding-left: 30px;
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group .button:hover {
+  background-color: #0920cd;
+}
+.btn-group .button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+ 
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group .button1:hover {
+  background-color: #3e8e41;
+}
+.btn-group .button2 {
+  background-color: #f14848; /* Green */
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+ 
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group .button2:hover {
+  background-color: #d91d1d;
+}
+.text-area1{
+
+  width: 100%;
+  height: 40px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  
+  border-radius: 4px;
+  font-size: 45px;
+  font-display: white;
+  font-variant-caps: unicase;
+  resize: none;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 50px;
+  padding:20px 20px;
+  box-sizing: border-box;
+  
+  border-radius: 4px;
+  font-size: 50px;
+  font-display: white;
+  font-variant-caps: unicase;
+  resize: none;
+}
+
+.rupee-symbol {
+  margin-right: 5px;
+}

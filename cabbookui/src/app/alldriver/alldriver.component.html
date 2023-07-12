@@ -1,0 +1,145 @@
+<html>
+    <style>
+  
+    
+        /* Float four columns side by side */
+        .card {
+          float: left;
+          width: 25%;
+          padding: 0 px;
+          break-inside: avoid;
+        }
+        
+        /* Remove extra left and right margins, due to padding in columns */
+        .card {margin: 1-5px;}
+        
+        /* Clear floats after the columns */
+        .card:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        /* .card:hover{
+          padding: 25px;
+        }
+         */
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+          padding: 20px;
+          text-align: center;
+        
+          background-color:whitesmoke;
+          margin:20px;
+          
+        }
+        
+        
+        h3 {
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+        
+            
+        }
+        
+        
+        /* button {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #333;
+            background: #efccef;
+            margin-bottom: 50px;
+            box-shadow: 0 3px 20px 0 #0000003b;
+        }
+        button:hover{
+            cursor: pointer;
+        } */
+    
+        .container{
+            column-count: 1;
+        }
+        
+        
+        
+        </style>
+    
+    <nav class="navbar navbar-dark bg-secondary" >
+
+        <h1>All Drivers</h1>
+      </nav>
+
+    
+<br>
+
+<!-- <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Driver ID</th>
+            <th>Driver Name</th>
+            <th>Contact Number</th>
+            <th>DOB</th>
+            <th>Adhaar Number</th>
+            <th>Address</th>
+            <th>Licence Number</th>
+            <th>Vehicle Name</th>
+            <th>Model Name</th>
+            <th>Vehicle Number</th>
+            <th>Availablity</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+   
+    <tbody>
+
+        <tr *ngFor="let t of driver">
+            <td>{{t.driverId}}</td>
+            <td>{{t.driverName}}</td>
+            <td>{{t.mobileNo}}</td>
+            <td>{{t.driverDob}}</td>
+            <td>{{t.driverAdharNo}}</td>
+            <td>{{t.driverAddress}}</td>
+            <td>{{t.driverLicenceNo}}</td>
+            <td>{{t.vehicleName}}</td>
+            <td>{{t.modelName}}</td>
+            <td>{{t.driverVehicleNo}}</td>
+            <td value="status()">{{t.availability}}</td>
+            
+            <td><button type="submit" class="btn btn-primary" (click)="Edit(t.driverId)">Update</button></td>
+            <td><button type="submit" class="btn btn-danger" (click)="Delete(t.driverId)">Delete</button></td>
+
+        </tr>
+
+    </tbody>
+</table> -->
+
+<div class="container">
+    <tr *ngFor="let t of driver">
+     <td>
+        <div class="card" style="width: 75rem;"> 
+      
+        <div class="card-body">
+            <td> <img src="./assets/img/{{t.image}}" class="card-img-top" alt="..."></td>
+        <td> <h3 class="card-title">Driver ID :</h3><h4>{{t.driverId}} </h4></td>
+        <td> <h3 class="card-text">Driver Name :</h3><h4>{{t.driverName}}</h4></td>
+       <td> <h3 class="card-text"> Contact No :</h3><h4>{{t.mobileNo}}</h4></td>
+        <td>  <h3 class="card-text">DOB :</h3><h4>{{t.driverDob}}</h4></td>
+        <td>  <h3 class="card-text">Adhaar Number :</h3><h4>xxxx xxxx {{t.driverAdharNo.slice(8,12)}}</h4></td>
+        <td>  <h3 class="card-text">Address : </h3><h4>{{t.driverAddress}}</h4></td>
+        <!-- <td>  <h3 class="card-text">Licence Number : {{t.driverLicenceNo}}</h3></td> -->
+        <td>  <h3 class="card-text">Vehicle Name :</h3><h4> {{t.vehicleName}}</h4></td>
+         <td><h3 class="card-text" value="status()" style="font-weight:bold">Status: </h3><h2>{{t.availability}}</h2></td>
+         <td><button type="submit" class="btn btn-primary" (click)="Edit(t.driverId)">Update</button><br><br>
+         <button type="submit" class="btn btn-danger" (click)="Delete(t.driverId)">Delete</button></td>  </div>
+      </div>
+     </td>
+    </tr> 
+    
+    </div>
+
+</html>
+
+
+

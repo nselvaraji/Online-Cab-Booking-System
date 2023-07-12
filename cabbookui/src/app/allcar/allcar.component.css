@@ -1,0 +1,108 @@
+.table{
+    background-color: aliceblue;
+  }
+  
+  input[type=text],
+  select {
+    width: 50%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    display: inline-block;
+    border: 1px solid rgb(25, 20, 20);
+    border-radius: 2 px;
+    box-sizing: border-box;
+  }
+  
+  
+  th {
+    font-family: Georgia;
+    text-align: center;
+    font-size: 12px;
+    
+    
+  }
+  
+  td{
+    font-family: Georgia;
+    text-align: center;
+    font-size: 16px;
+  
+  
+  }
+  
+    h2 {
+      font-family: Georgia;
+      color: rgb(17, 17, 17);
+      padding-top: 00px;
+      padding-bottom: 00px;
+      padding-left: 550px;
+    }
+  
+      
+    /* Float four columns side by side */
+    .card {
+      float: left;
+      width: 25%;
+      padding: 0 px;
+      break-inside: avoid;
+    }
+    
+    /* Remove extra left and right margins, due to padding in columns */
+    .card {margin: 1-5px;}
+    
+    /* Clear floats after the columns */
+    .card:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* .card:hover{
+      padding: 25px;
+    }
+     */
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+      padding: 20px;
+      text-align: center;
+    
+      background-color:whitesmoke;
+      margin:20px;
+      
+    }
+    
+    
+    h3 {
+        font-family: 'Dancing Script', cursive;
+    
+        
+    }
+    
+    
+    .container{
+        column-count: 4;
+    }
+    .navbar{
+
+     background-color: rgb(216, 199, 70);
+      
+      }
+      .btn-submit:hover{
+        background-color: rgb(1, 173, 21);
+      }
+      .btn-submit{
+        background: rgb(50, 220, 107);
+        
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #ffffff;
+       
+        margin-bottom: 50px;
+        box-shadow: 0 3px 20px 0 #0000003b;
+      }
+      .btn-submit:disabled {
+       
+       background: rgb(249, 94, 94);
+      }

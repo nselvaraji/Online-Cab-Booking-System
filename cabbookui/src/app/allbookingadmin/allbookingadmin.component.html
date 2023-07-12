@@ -1,0 +1,52 @@
+
+<html>
+    
+    <nav class="navbar" >
+
+        <h2>All Bookings</h2>
+      </nav>
+
+    
+<br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+
+            <th>Driver Name</th>
+            <th>Contact Number</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>From Date</th>
+        
+            <th>Timing</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+   
+    <tbody>
+
+        <tr *ngFor="let t of booking">
+          
+            <td>{{t.driverId.driverName}}</td>
+            <td>{{t.driverId.mobileNo}}</td>
+            <td>{{t.source}}</td>
+            <td>{{t.destination}}</td>
+            <td>{{t.startDate}}</td>
+            <td>{{t.time}}</td>
+            <td *ngIf="t.isApproved"><b style="color:green" >Approved</b></td>
+            
+            <td *ngIf="t.isRejected"><b style="color:red">Rejected</b></td>
+            <td *ngIf="!t.isRejected && !t.isApproved"><b style="color:blue">Pending</b></td>
+           
+        </tr>
+
+    </tbody>
+</table>
+
+
+</html>
+
+
+
+

@@ -1,0 +1,32 @@
+.space{
+    margin-left: 200px;
+    color: white;
+}
+.navbar{
+
+    background-color: rgb(216, 199, 70);
+    
+     }
+     .navbar-nav{
+
+      margin-left: 80%;
+      
+      }
+      
+      nav{
+      
+      margin-left:1%;
+      
+   background-color:linear-gradient(#bdc3c7 → #2c3e50);
+      
+       border-radius:60lvw;
+      
+      }
+      
+      .h1{
+      
+     font-family: 'Times New Roman', Times, serif;
+      
+      font-size: 220%;
+      
+      }

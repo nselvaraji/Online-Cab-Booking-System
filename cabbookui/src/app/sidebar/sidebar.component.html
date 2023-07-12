@@ -1,0 +1,84 @@
+
+<mat-card>
+
+    <mat-action-list>
+
+        <div mat-subheader></div>
+
+        <button  *ngIf="login.checkadmin()" mat-list-item routerLink="/adminpage/cabapproval">
+
+            <mat-icon mat-list-icon></mat-icon>Cab Approval</button>
+        
+        <button  *ngIf="login.checkadmin()" mat-list-item routerLink="/adminpage/adminprofile">
+
+            <mat-icon mat-list-icon></mat-icon>Admin Profile</button>
+
+            <button  *ngIf="login.checkadmin()" mat-list-item routerLink="/adminpage/driverform">
+
+                <mat-icon mat-list-icon></mat-icon>Add Driver</button>
+
+                <button *ngIf="login.checkadmin()"  mat-list-item routerLink="/adminpage/alldriver">
+
+                    <mat-icon mat-list-icon></mat-icon>Driver List</button>
+
+                    <button  *ngIf="login.checkadmin()"  mat-list-item  routerLink="/adminpage/allbookingadmin">
+
+                        <mat-icon mat-list-icon></mat-icon>Booking List</button>
+
+                        <button  *ngIf="login.checkadmin()" mat-list-item routerLink="/adminpage/allcustomers">
+
+                            <mat-icon mat-list-icon></mat-icon>Customer List</button>
+    
+        
+
+        <button *ngIf="!login.checkadmin()"  mat-list-item  routerLink="/firstpage/allcar">
+
+            <mat-icon mat-list-icon></mat-icon>Car</button>
+
+
+            <button *ngIf="login.checkadmin()"  mat-list-item  routerLink="/adminpage/cardetails">
+
+                <mat-icon mat-list-icon></mat-icon>Car</button>
+    
+    
+
+
+
+   
+
+        <button  *ngIf="!login.checkadmin()"  mat-list-item  routerLink="/firstpage/allbooking">
+
+            <mat-icon mat-list-icon></mat-icon>My Bookings</button>
+
+            
+
+        <button *ngIf="!login.checkadmin()"  mat-list-item routerLink="/firstpage/customerprofile">
+
+            <mat-icon mat-list-icon></mat-icon>Customer Profile</button>
+            <!-- <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br>
+                <button *ngIf="!login.checkadmin()"  mat-list-item routerLink="/firstpage/inbox">
+
+                <mat-icon mat-list-icon></mat-icon>Inbox</button> -->
+    
+
+
+
+           <!--<button  *ngIf="login.checkadmin()" mat-list-item routerLink="#">
+
+                <mat-icon mat-list-icon>summarize</mat-icon>Home</button>--> 
+                        
+                    
+
+    </mat-action-list>
+
+</mat-card>
